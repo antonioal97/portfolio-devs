@@ -8,80 +8,83 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/744674e787.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./vendor/reset.css">
+  <link rel="stylesheet" href="./vendor/normalize.css/normalize.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-  <!-- Neste projeto, vou tentar utilizar o menor número possível de classes e id's,
-  e me esforçar para utilizar seletores css ao máximo -->
-<body>
-  <header>
+<body class="bg-black">
+  <header class="l-header c-wrapper">
     <!-- logo do site -->
-    <a href="#"><img src="../assets/logo.png" alt="This is a webpage logo"></a>
+    <a href="#" class="l-header__logo"><img src="../assets/logo.png" alt="This is a webpage logo"></a>
     <!-- Menu de navegação -->
-    <nav>
-      <ul>
-        <li><a href="#">Stacks</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About me</a></li>
+    <nav class="c-main-menu">
+      <ul class="c-main-menu__list">
+        <li class="c-main-menu__item" ><a class="c-main-menu__link bold" href="#">Stacks</a></li>
+        <li class="c-main-menu__item" ><a class="c-main-menu__link bold" href="#">Projects</a></li>
+        <li class="c-main-menu__item" ><a class="c-main-menu__link bold" href="#">About me</a></li>
       </ul>
     </nav>
     <!-- CTA Button -->
-    <a href="#" class="c-button">Contact</a>
+    <a href="#" class="c-button bold">Contact</a>
   </header>
   <!-- Hero do site -->
-  <section id="home">
-    <div>
-      <h2>
+  <section id="home" class="l-home c-wrapper">
+    <div class="l-home__landing">
+      <h2 class="bold">
         Desenvolvedora Frontend
       </h2>
-      <h1>Rebeca Sparcks</h1>
+      <h1 class="bold">Rebeca Sparcks</h1>
       <p>Bem vindo(a) ao meu mundo. Aqui é onde mostro todas as minhas experiências e minha paixão, que é desenvolver. Bora trocar conhecimentos!</p>
-      <a href="#" class="c-button">my CV</a>
+      <a href="#" class="c-button bold">my CV</a>
     </div>
-    <div>
+    <div class="l-home__img">
       <img src="../assets/image-top.png" alt="Background img hero">
       <img src="../assets/JS.png" alt="js img png">
     </div>
-    <ul>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <ul class="c-social-list">
+      <li><a class="c-social-list__item" href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a class="c-social-list__item" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a class="c-social-list__item" href="#"><i class="fab fa-dribbble"></i></a></li>
+      <li><a class="c-social-list__item" href="#"><i class="fab fa-instagram"></i></a></li>
     </ul>
   </section>
 
-  <section id="stacks">
-    <h2 class="c-section__title">Stacks</h2>
-    <div class="c-stack">
-      <img src="../assets/html.png" alt="">
-      <span>
-        <i class="fas fa-trophy"></i>
-        <p>1 year</p>
-      </span>
-      <span>
-        <i class="fas fa-tablet-alt"></i>
-        <p>10 Projects</p>
-      </span>
-    </div>
-    <div class="c-stack">
-      <img src="../assets/JS.png" alt="">
-      <span>
-        <i class="fas fa-trophy"></i>
-        <p>1 year</p>
-      </span>
-      <span>
-        <i class="fas fa-tablet-alt"></i>
-        <p>10 Projects</p>
-      </span>
-    </div>
-    <div class="c-stack">
-      <img src="../assets/css.png" alt="">
-      <span>
-        <i class="fas fa-trophy"></i>
-        <p>1 year</p>
-      </span>
-      <span>
-        <i class="fas fa-tablet-alt"></i>
-        <p>10 Projects</p>
-      </span>
+  <section id="stacks" class="bg-gray">
+    <div class="c-wrapper">
+      <h2 class="c-section__title">Stacks</h2>
+      <div class="c-stack">
+        <img src="../assets/html.png" alt="">
+        <span>
+          <i class="fas fa-trophy"></i>
+          <p>1 year</p>
+        </span>
+        <span>
+          <i class="fas fa-tablet-alt"></i>
+          <p>10 Projects</p>
+        </span>
+      </div>
+      <div class="c-stack">
+        <img src="../assets/JS.png" alt="">
+        <span>
+          <i class="fas fa-trophy"></i>
+          <p>1 year</p>
+        </span>
+        <span>
+          <i class="fas fa-tablet-alt"></i>
+          <p>10 Projects</p>
+        </span>
+      </div>
+      <div class="c-stack">
+        <img src="../assets/css.png" alt="">
+        <span>
+          <i class="fas fa-trophy"></i>
+          <p>1 year</p>
+        </span>
+        <span>
+          <i class="fas fa-tablet-alt"></i>
+          <p>10 Projects</p>
+        </span>
+      </div>
     </div>
   </section>
 
