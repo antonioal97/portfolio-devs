@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="c-wrapper l-header">
-        <a href="" class="c-logo"><img src="../assets/logo.png" alt=""></a>
-        <nav class="c-menu">
-            <ul class="c-menu__content">
-                <li class="c-menu__item"><a href="#" class="c-menu__link">Stacks</a></li>
-                <li class="c-menu__item"><a href="#" class="c-menu__link">Projects</a></li>
-                <li class="c-menu__item"><a href="#" class="c-menu__link">About me</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="c-button">Contact</a>
-    </header>
-    <main class="l-main">
-        <section class="c-wrapper l-hero">
+    <div class="l-hero">
+        <header class="c-wrapper l-header">
+            <a href="" class="c-logo"><img src="../assets/logo.png" alt=""></a>
+            <nav class="c-menu">
+                <ul class="c-menu__content">
+                    <li class="c-menu__item"><a href="#" class="c-bold c-menu__link">Stacks</a></li>
+                    <li class="c-menu__item"><a href="#" class="c-bold c-menu__link">Projects</a></li>
+                    <li class="c-menu__item"><a href="#" class="c-bold c-menu__link">About me</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="c-button">Contact</a>
+        </header>
+        <section class="c-wrapper l-hero__inner">
             <div class="l-hero__content">
-                <h2 class="c-subtitle">Desenvolvedora Frontend</h2>
+                <h2 class="c-bold c-subtitle">Desenvolvedora Frontend</h2>
                 <h1 class="c-title">Rebeca Sparks</h1>
                 <p>Bem vindo(a) ao meu mundo. aqui é onde mostro
                     todas as minhas experiências e minha paixão, que é
@@ -33,7 +33,9 @@
                 </p>
                 <a href="" class="c-button">My CV</a>
             </div>
-            <img src="../assets/image-top.png" alt="This is a hero image">
+            <div class="l-hero__background">
+                <img src="../assets/image-top.png" alt="This is a hero image">
+            </div>
             <ul class="c-social">
                 <li class="c-social__item"><a href="#" class="c-social__link"><i class="fab fa-twitter"></i></a></li>
                 <li class="c-social__item"><a href="#" class="c-social__link"><i class="fab fa-linkedin-in"></i></a></li>
@@ -41,6 +43,8 @@
                 <li class="c-social__item"><a href="#" class="c-social__link"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </section>
+    </div>
+    <main class="l-main">
         <section class="c-wrapper l-stacks">
             <h2 class="c-title">Stacks</h2>
             <div class="c-stack">
